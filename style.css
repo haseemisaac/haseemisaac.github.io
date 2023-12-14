@@ -1,0 +1,85 @@
+* {
+    color: white;
+}
+#heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+/* html, body {
+    height: 100%;
+    margin: 0;
+} */
+.main-area {
+    position:absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading {
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .15em solid orange; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+letter-spacing: .15em; /* Adjust as needed */
+animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange; }
+}
+
+#mouse {
+top: 20%;
+left: calc(50% - 25px);
+width: 50px;
+height: 50px;
+border-radius: 50%;
+position: absolute;
+background-color: rgba(255, 255, 255, 0.776);
+box-shadow: 0px 0px 40px 4px #0ff;
+}
+
+.app-bar {
+    font-family: 'Afacad', sans-serif;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    /* gap: 20px; */
+    align-items: center;
+    font-size: 30px;
+    background: rgba(34, 183, 200, 0.5)
+}
+
+p {
+    margin: 5px;
+}
+
+
+.bar-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
