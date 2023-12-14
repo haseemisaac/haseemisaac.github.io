@@ -21,14 +21,26 @@
     <div class="main-area">
         <h2 id="heading">{ HASEEM ISAAC }</h2>
         <div class="app-bar">
-            <div class="bar-item" href="https://www.linkedin.com/in/haseemisaac/"><p>LinkedIn</p><i class="fa-brands fa-linkedin-in"></i></div>
-            <div class="bar-item" href="https://github.com/haseemisaac"><p>Github</p><i class="fa-brands fa-github"></i></div>
-            <div class="bar-item" href="https://drive.google.com/file/d/158slzKt3dXyGbHX7amkilP1uStScZF0l/view"><p>CV</p><i class="fa-regular fa-file"></i></div>
+            <div class="bar-item" onclick="openLinkedIn()" style="cursor: pointer;"><p>LinkedIn</p><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="bar-item" onclick="openGithub()"><p>Github</p><i class="fa-brands fa-github"></i></div>
+            <div class="bar-item" onclick="openCV()"><p>CV</p><i class="fa-regular fa-file"></i></div>
         </div>
     </div>
   </body>
 
   <script>
+    function openLinkedIn() {
+      window.open("https://www.linkedin.com/in/haseemisaac/",'mywindow');
+    }
+
+    function openGithub() {
+      window.open("https://github.com/haseemisaac",'mywindow');
+    }
+
+    function openCV() {
+      window.open("https://drive.google.com/file/d/158slzKt3dXyGbHX7amkilP1uStScZF0l/view",'mywindow');
+    }
+
     console.log("Welcome to my humble portfolio 😉")
     $(document).mousemove(function(event) {
         $('#mouse').offset({
