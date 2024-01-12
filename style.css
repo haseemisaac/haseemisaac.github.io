@@ -1,6 +1,11 @@
 * {
     color: white;
 }
+
+html,body{
+    margin:0;
+}
+
 #heading {
     font-family: 'Cormorant Garamond', serif;
     font-family: 'Silkscreen', sans-serif;
